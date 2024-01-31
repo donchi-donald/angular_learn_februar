@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { HousingLocation } from '../housinglocation';
 
 @Component({
   selector: 'app-home',
@@ -6,15 +7,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  @Input()
-  title:string = 'home works!';
+  readonly baseUrl = 'https://afrogeekacademy.com/assets/learn/img/';
 
-  @Output()
-  changeTitle = new EventEmitter<string>();
+  housingLocation: HousingLocation = {
+    id: 9999,
+    name: 'Test Home',
+    city: 'Test city',
+    state: 'ST',
+    photo: `${this.baseUrl}/1.jpg`,
+    availableUnits: 99,
+    wifi: true,
+    laundry: false,
+  };
 
-  changeTitleClick(){
-    this.changeTitle.emit('home changed');
-  }
- 
 
 }
