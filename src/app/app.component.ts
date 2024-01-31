@@ -23,5 +23,9 @@ export class AppComponent {
   constructor(){
 
   }
+
+  test(){
+    
+  }
 }
 

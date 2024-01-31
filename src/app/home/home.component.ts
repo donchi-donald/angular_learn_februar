@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  @Input()
+  title:string = 'home works!';
+
+  @Output()
+  changeTitle = new EventEmitter<string>();
+
+  changeTitleClick(){
+    this.changeTitle.emit('home changed');
+  }
+ 
 
 }
