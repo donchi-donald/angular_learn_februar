@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { HousingLocationComponent } from './housing-location/housing-location.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -12,7 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    HousingLocationComponent
+    HousingLocationComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

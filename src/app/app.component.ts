@@ -1,7 +1,5 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { HousingService } from './housing.service';
-import { StudentService } from './student.service';
-import { Student } from './student';
+import { Component } from '@angular/core';
+
 
 export type EnterpriseEnum = 'AFROGEEK' | 'AFROGEEK_ACADEMY' | 'AFROGEEK_LINGUISTICS' | 'AFROGEEK_STUDIOS' | 'AFROGEEK_TECH_SOLUTIONS' | 'AFROGEEK_EV' | 'AFROGEEK_EVENTS' | 'AFROGEEK_CONSULTANCY' | 'AFROGEEK_VENTURES' | 'AFROGEEK_COMMUNITY_HUB' | 'AFROGEEK_RETAIL' | 'AFROGEEK_PUBLICATIONS' | 'AFROGEEK_USER';
 
@@ -20,11 +18,6 @@ export class AppComponent {
 
 
 
-  constructor() {
-    
-  }
-
-    
 
   
 
