@@ -6,6 +6,8 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { DetailsComponent } from './details/details.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -17,9 +19,11 @@ import { DetailsComponent } from './details/details.component';
     DetailsComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
